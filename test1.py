@@ -12,9 +12,9 @@ class huoche(object):
     driver_name=''
     executable_path=''
     #用户名，密码
-    username = u"943257156@qq.com"
-    passwd = u"zhjm520gmj620"
-    # cookies值得自己去找, 下面两个分别是上海, 太原南
+    username = u"******"
+    passwd = u"******"
+    # cookies值得自己去找, 下面两个分别是常州, 蚌埠
     starts = u"%u5E38%u5DDE%2CCZH"
     ends = u"%u868C%u57E0%2CBBH"
     # 时间格式2018-01-19
@@ -22,7 +22,7 @@ class huoche(object):
     # 车次，选择第几趟，0则从上之下依次点击
     order = 5
     ###乘客名
-    users = [u"郑家敏",u"宫明娟"]
+    users = [u"***",u"***"]
     ##席位
     xb = u"二等座"
     pz=u"成人票"
@@ -117,6 +117,7 @@ class huoche(object):
                     """
                     if int(G1974)>2 or int(G1258)>2 or int(G1806)>2 or int(G1920)>2 or int(G116)>2 or int(G1228)>2 or int(G1924)>2 or int(G4318)>2 or int(G216)>2 or int(G158)>2 or int(G160)>2 or int(G7292)>2:
                         try:
+                            print('1')
                             for i in self.driver.find_by_text(u"预订"):
                                 try:
                                     i.click()
