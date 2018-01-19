@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-@author: liuyw
+@author: zhjm
 """
 from splinter.browser import Browser
 from time import sleep
